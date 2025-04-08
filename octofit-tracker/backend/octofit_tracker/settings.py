@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-y5pw&=7lzfk=lu#@9@rx%*_x=_!1#qxfo*0v%33h#vwuu@(g4f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['curly-computing-machine-5jr67xrjww634vpg-8000.app.github.dev', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -131,3 +131,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Add CORS configuration
 CORS_ALLOW_ALL_ORIGINS = True
+
+SECURE_SSL_REDIRECT = False
+CSRF_TRUSTED_ORIGINS = ['https://curly-computing-machine-5jr67xrjww634vpg-8000.app.github.dev']
