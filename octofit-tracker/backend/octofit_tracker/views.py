@@ -6,8 +6,8 @@ from .models import User, Team, Activity, Leaderboard, Workout
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = request.build_absolute_uri('/')[:-1].strip('/')
-    codespace_suffix = '/codespace'  # Adding codespace suffix
+    base_url = "https://curly-computing-machine-5jr67xrjww634vpg-8000.app.github.dev"
+    codespace_suffix = ''  # Adding codespace suffix
     return Response({
         'users': f'{base_url}{codespace_suffix}/api/users/',
         'teams': f'{base_url}{codespace_suffix}/api/teams/',
